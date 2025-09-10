@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -159,7 +158,6 @@ textarea :hover {
 .button:hover {
     background-color: blueviolet;
 }
-=======
 * {
     margin: 0;
     padding: 0;
@@ -320,10 +318,6 @@ textarea :hover {
 .button:hover {
     background-color: blueviolet;
 }
-<<<<<<< HEAD
->>>>>>> 55d2202 (We updated the shopping website)
-=======
-
 @media (max-width: 600px) {
     header {
         padding: 10px 15px;
@@ -355,4 +349,3 @@ textarea :hover {
         font-size: 15px;
     }
 }
->>>>>>> 904b41d (updated About_us section)

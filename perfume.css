@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+h1 {
+    text-align: center;
+    padding: 30px 40px;
+    color: rgb(54, 1, 54);
+    background-color: #a7ccf3;
+}
+.perfume-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: rgb(105, 207, 220);
+    
+}
+.perfume {
+    background-color: rgb(105, 13, 105);
+    flex: 1 1 23%;
+    max-width: 23%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 5px gold;
+    transition: transform 0.3s;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.perfume:hover {
+    transform: scale(1.05);
+     box-shadow: 0 0 20px rgb(232, 207, 62), 0 0 40px rgb(232, 207, 62), 0 0 60px rgb(232, 207, 62);
+
+}
+.perfume img {
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: grey;
+    
+}
+.perfume h3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.perfume p {
+    color: #f5f5f5;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.perfume span {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    color: #a7ccf3;
+    font-weight: bold;
+}
+.perfume span s {
+    font-size: 14px;
+}
+.perfume button {
+    border: 50px;
+    border-radius: 8px;
+    border-color: rgb(105, 13, 105);
+    width: 110px;
+    height: 20px;
+    transition: transform 0.5s;
+    background-color: #a7ccf3;
+    color: rgb(105, 13, 105);
+}
+.perfume button:hover {
+    background-color:  rgb(105, 207, 220);
+    color: rgb(105, 13, 105);
+    transform: scale(1.10)
+}
+.button {
+    display: block;
+    margin: 10px auto;
+}
+
+
+/*Media queries*/
+@media (max-width: 600px) {
+    .perfume {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+        max-width: 100%;
+        
+
+    }
+    .perfume img {
+        height: auto;
+        width: 100%;
+    }
+    .perfume button {
+    width: 80%;
+    height: 50px;
+}
+    .perfume h3 {
+        font-size: 30px;
+    }
+    .perfume p {
+        font-size: 27px;
+        text-align: center;
+    }
+    .perfume span {
+        font-size: 30px;
+    }
+    .perfume span s {
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    padding: 30px 40px;
+    color: rgb(54, 1, 54);
+    background-color: #a7ccf3;
+}
+.shoe-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: rgb(105, 207, 220);
+    
+}
+.shoe {
+    background-color: rgb(105, 13, 105);
+    flex: 1 1 23%;
+    max-width: 23%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 5px gold;
+    transition: transform 0.3s;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.shoe:hover {
+    transform: scale(1.05);
+     box-shadow: 0 0 20px rgb(232, 207, 62), 0 0 40px rgb(232, 207, 62), 0 0 60px rgb(232, 207, 62);
+
+}
+.shoe img {
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: grey;
+    
+}
+.shoe h3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.shoe p {
+    color: #f5f5f5;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.shoe span {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    color: #a7ccf3;
+    font-weight: bold;
+}
+.shoe span s {
+    font-size: 14px;
+}
+.shoe button {
+    border: 50px;
+    border-radius: 8px;
+    border-color: rgb(105, 13, 105);
+    width: 110px;
+    height: 20px;
+    transition: transform 0.5s;
+    background-color: #a7ccf3;
+    color: rgb(105, 13, 105);
+}
+.shoe button:hover {
+    background-color:  rgb(105, 207, 220);
+    color: rgb(105, 13, 105);
+    transform: scale(1.10)
+}
+.button {
+    display: block;
+    margin: 10px auto;
+}
+
+
+/*Media queries*/
+@media (max-width: 600px) {
+    .shoe {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+        max-width: 100%;
+        
+
+    }
+    .shoe img {
+        height: auto;
+        width: 100%;
+    }
+    .shoe button {
+    width: 80%;
+    height: 50px;
+}
+    .shoe h3 {
+        font-size: 30px;
+    }
+    .shoe p {
+        font-size: 27px;
+        text-align: center;
+    }
+    .shoe span {
+        font-size: 30px;
+    }
+    .shoe span s {
+        font-size: 25px;
+    }
+}
